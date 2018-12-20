@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is the MAIN route!</title>
+</head>
+<body>
+
+	<% include ../partials/header.ejs %>
+
+	<h2>Hello,  <%= name %>, welcome to MAIN route! :)</h2>
+	<% var dogAge=age*7 %>
+	<h3>You are <%= dogAge %> years old in dog years.</h3>
+	<% var status %>
+	<% if(dogAge<100){ %>
+		<% status = 'young' %>
+	<% } else{ %>
+		<% status = 'old' %>
+	<% } %>
+	<h3>This means you are <%= status %>!</h3>
+
+	<% include ../partials/footer.ejs %>
+</body>
+</html>

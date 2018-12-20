@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is the ABOUT route!</title>
+</head>
+<body>
+	<h2>Hello, welcome to ABOUT route! :)</h2>
+	<% include ../partials/header.ejs %>
+	
+	<ul>
+	<% faves.forEach(function(elem){ %>
+		<li><%= elem %></li>
+	<% }) %>
+	</ul>
+
+	<% include ../partials/footer.ejs %>
+
+</body>
+</html>
